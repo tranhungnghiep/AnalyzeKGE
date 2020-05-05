@@ -1,6 +1,6 @@
 ### Analyzing Knowledge Graph Embedding Methods
 
-This is a pure Python implementation in TensorFlow 1.x of knowledge graph embedding methods under the perspective in [our paper](https://arxiv.org/abs/1903.11406). The codes are part of our experiments and featuring several recent state-of-the-art models includin DistMult, CP, SimplE, ComplEx, and the proposed Quaternion embeddings.
+This is a pure Python implementation of knowledge graph embedding (KGE) methods in TensorFlow 1.x/Keras. This was part of the experiments to unify previous KGE models under the perspective in [our paper (2019)](https://arxiv.org/abs/1903.11406). The codes demonstrate several important techniques in KGE and featuring recent state-of-the-art models including TransE, DistMult, CP, SimplE, ComplEx, and our proposed Quaternion embeddings.
 
 Knowledge graph embedding methods aim to learn low-dimensional vector representations of entities and relations in knowledge graphs. The models take input in the format of triples (h, t, r) denoting head entity, tail entity, and relation, respectively, and output their embedding vectors as well as solving link prediction.
 
