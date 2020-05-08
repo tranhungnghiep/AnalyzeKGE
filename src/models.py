@@ -425,6 +425,27 @@ class Quaternion(Model):
                 + tf.reduce_sum(self.he[1] * self.te[2] * self.re[3], axis=1) \
                 - tf.reduce_sum(self.he[2] * self.te[1] * self.re[3], axis=1) \
                 - tf.reduce_sum(self.he[3] * self.te[0] * self.re[3], axis=1)
+        # Equivalent computation orders, group by t for better batch processing:
+        # score = (h0r0-h1r1-h2r2-h3r3)@t0 + (h0r1+h1r0-h2r3+h3r2)@t1 + (h0r2+h1r3+h2r0-h3r1)@t2 + (h0r3-h1r2+h2r1+h3r0)@t3
+        # score = 0 \
+        #         + tf.reduce_sum(self.he[0] * self.te[0] * self.re[0], axis=1) \
+        #         - tf.reduce_sum(self.he[1] * self.te[0] * self.re[1], axis=1) \
+        #         - tf.reduce_sum(self.he[2] * self.te[0] * self.re[2], axis=1) \
+        #         - tf.reduce_sum(self.he[3] * self.te[0] * self.re[3], axis=1) \
+        #         + tf.reduce_sum(self.he[0] * self.te[1] * self.re[1], axis=1) \
+        #         + tf.reduce_sum(self.he[1] * self.te[1] * self.re[0], axis=1) \
+        #         - tf.reduce_sum(self.he[2] * self.te[1] * self.re[3], axis=1) \
+        #         + tf.reduce_sum(self.he[3] * self.te[1] * self.re[2], axis=1) \
+        #         + tf.reduce_sum(self.he[0] * self.te[2] * self.re[2], axis=1) \
+        #         + tf.reduce_sum(self.he[1] * self.te[2] * self.re[3], axis=1) \
+        #         + tf.reduce_sum(self.he[2] * self.te[2] * self.re[0], axis=1) \
+        #         - tf.reduce_sum(self.he[3] * self.te[2] * self.re[1], axis=1) \
+        #         + tf.reduce_sum(self.he[0] * self.te[3] * self.re[3], axis=1) \
+        #         - tf.reduce_sum(self.he[1] * self.te[3] * self.re[2], axis=1) \
+        #         + tf.reduce_sum(self.he[2] * self.te[3] * self.re[1], axis=1) \
+        #         + tf.reduce_sum(self.he[3] * self.te[3] * self.re[0], axis=1) \
+        #         + 0
+
         return score
 
 
