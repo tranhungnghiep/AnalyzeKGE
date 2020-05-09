@@ -1,3 +1,7 @@
+# To ignore: list it, e.g., folder_name/, file_name
+# To keep: list it with !, e.g., !folder_name/, !file_name
+# To ignore after adding to repo: "git rm --cached -r folder_name" to remove from index, then "git reset folder_name".
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -117,5 +121,5 @@ result/
 checkpoint
 *.ckpt.*
 *.vec.*
-out/
 src/ref/runs/
+out/
