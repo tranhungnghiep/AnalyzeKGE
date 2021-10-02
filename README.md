@@ -1,6 +1,6 @@
 ### Analyzing Knowledge Graph Embedding Methods
 
-This is a pure Python implementation of knowledge graph embedding (KGE) methods in TensorFlow 1.x/Keras, which was part of our experiments to unify previous KGE models under the perspective in our [2019 paper](https://arxiv.org/abs/1903.11406), as well as a preliminary to our [2020 paper](https://arxiv.org/abs/2006.16365). The codes demonstrate several important techniques in KGE and feature some recent state-of-the-art models including TransE, DistMult, CP, SimplE, ComplEx, and our proposed Quaternion embeddings.
+This is a pure Python implementation of knowledge graph embedding (KGE) methods in TensorFlow 1.x/Keras, which was part of our experiments to unify previous KGE models under the perspective in our [DSI4 EDBT/ICDT 2019 paper](https://arxiv.org/abs/1903.11406), as well as a preliminary to our [ECAI 2020 paper](https://arxiv.org/abs/2006.16365). The codes demonstrate several important techniques in KGE and feature some recent state-of-the-art models including TransE, DistMult, CP, SimplE, ComplEx, and our proposed [Quaternion embeddings](https://arxiv.org/abs/1903.11406).
 
 Knowledge graph embedding methods aim to learn low-dimensional vector representations of entities and relations in knowledge graphs. The models take input in the format of triples (h, t, r) denoting head entity, tail entity, and relation, respectively, and output their embedding vectors as well as solving link prediction.
 
@@ -20,6 +20,6 @@ python main.py --seed 7 --gpu 0 --model Quaternion --in_path ../datasets/wn18/ -
 ```
 
 **Corresponding paper:**  
-If you use the codes, please kindly cite the following paper(s).  
-- *Hung Nghiep Tran and Atsuhiro Takasu (2019). <a href="https://arxiv.org/abs/1903.11406" target="_blank">Analyzing Knowledge Graph Embedding Methods from a Multi-Embedding Interaction Perspective</a>. In Proceedings of DSI4 at EDBT/ICDT.*  
-- *Hung Nghiep Tran and Atsuhiro Takasu (2020). <a href="https://arxiv.org/abs/2006.16365" target="_blank">Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion</a>. In Proceedings of the 24th European Conference on Artificial Intelligence (ECAI 2020).*  
+If you found this code or our work useful, please cite us.
+- *Hung Nghiep Tran and Atsuhiro Takasu. <a href="https://arxiv.org/abs/1903.11406" target="_blank">Analyzing Knowledge Graph Embedding Methods from a Multi-Embedding Interaction Perspective</a>. In Proceedings of DSI4 at EDBT/ICDT, 2019.*  
+- *Hung Nghiep Tran and Atsuhiro Takasu. <a href="https://arxiv.org/abs/2006.16365" target="_blank">Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion</a>. In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*  
