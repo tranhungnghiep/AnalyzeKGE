@@ -21,5 +21,5 @@ python main.py --seed 7 --gpu 0 --model Quaternion --in_path ../datasets/wn18/ -
 
 **Corresponding paper:**  
 If you found this code or our work useful, please cite us.
-- *Hung Nghiep Tran and Atsuhiro Takasu. <a href="https://arxiv.org/abs/1903.11406" target="_blank">Analyzing Knowledge Graph Embedding Methods from a Multi-Embedding Interaction Perspective</a>. In Proceedings of DSI4 at EDBT/ICDT, 2019.*  
-- *Hung Nghiep Tran and Atsuhiro Takasu. <a href="https://arxiv.org/abs/2006.16365" target="_blank">Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion</a>. In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*  
+- *Hung Nghiep Tran and Atsuhiro Takasu. [Analyzing Knowledge Graph Embedding Methods from a Multi-Embedding Interaction Perspective](https://arxiv.org/abs/1903.11406). In Proceedings of DSI4 at EDBT/ICDT, 2019.*  
+- *Hung Nghiep Tran and Atsuhiro Takasu. [Multi-Partition Embedding Interaction with Block Term Format for Knowledge Graph Completion](https://arxiv.org/abs/2006.16365). In Proceedings of the European Conference on Artificial Intelligence (ECAI), 2020.*  
