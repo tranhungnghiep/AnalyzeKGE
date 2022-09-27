@@ -7,13 +7,17 @@ Knowledge graph embedding methods aim to learn low-dimensional vector representa
 ## How to run
 ```shell script
 python main.py --seed 7 --gpu 0 --model DistMult --in_path ../datasets/wn18/ --D 400 --Ce 1 --Cr 1 --sampling negsamp --batch_size 128 --neg_ratio 5 --max_epoch 500 --lr 1e-3 --lr_decay 1.0 --lmbda_ent 1e-4 --lmbda_rel 1e-4 --reg_n3 0 --constraint "" --to_constrain ""
-
+```
+```shell script
 python main.py --seed 7 --gpu 0 --model CP --in_path ../datasets/wn18/ --D 200 --Ce 2 --Cr 2 --sampling negsamp --batch_size 128 --neg_ratio 5 --max_epoch 500 --lr 1e-3 --lr_decay 1.0 --lmbda_ent 1e-4 --lmbda_rel 1e-4 --reg_n3 0 --constraint "" --to_constrain ""
-
+```
+```shell script
 python main.py --seed 7 --gpu 0 --model SimplE --in_path ../datasets/wn18/ --D 200 --Ce 2 --Cr 2 --sampling negsamp --batch_size 128 --neg_ratio 5 --max_epoch 500 --lr 1e-3 --lr_decay 1.0 --lmbda_ent 1e-4 --lmbda_rel 1e-4 --reg_n3 0 --constraint "" --to_constrain ""
-
+```
+```shell script
 python main.py --seed 7 --gpu 0 --model ComplEx --in_path ../datasets/wn18/ --D 200 --Ce 2 --Cr 2 --sampling negsamp --batch_size 128 --neg_ratio 5 --max_epoch 500 --lr 1e-3 --lr_decay 1.0 --lmbda_ent 1e-4 --lmbda_rel 1e-4 --reg_n3 0 --constraint "" --to_constrain ""
-
+```
+```shell script
 python main.py --seed 7 --gpu 0 --model Quaternion --in_path ../datasets/wn18/ --D 100 --Ce 4 --Cr 4 --sampling negsamp --batch_size 128 --neg_ratio 5 --max_epoch 500 --lr 1e-3 --lr_decay 1.0 --lmbda_ent 1e-4 --lmbda_rel 1e-4 --reg_n3 0 --constraint "unitnorm" --to_constrain "rowrel"
 ```
 
