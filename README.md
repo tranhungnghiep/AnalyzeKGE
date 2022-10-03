@@ -1,6 +1,6 @@
 # Analyzing Knowledge Graph Embedding Methods
 
-This is a pure Python implementation of knowledge graph embedding (KGE) methods in TensorFlow 1.x/Keras, which was part of our experiments to unify previous KGE models under the perspective in our [DSI4 EDBT/ICDT 2019 paper](https://arxiv.org/abs/1903.11406), as well as a preliminary to our [ECAI 2020 paper](https://arxiv.org/abs/2006.16365) and [IJCAI 2022 paper](). The codes demonstrate several important techniques in KGE and feature some recent state-of-the-art models including TransE, DistMult, CP, SimplE, ComplEx, and our proposed [Quaternion embeddings](https://arxiv.org/abs/1903.11406).
+This is a pure Python implementation of knowledge graph embedding (KGE) methods in TensorFlow 1.x/Keras, which was part of our experiments to unify previous KGE models under the perspective in our [DSI4 EDBT/ICDT 2019 paper](https://arxiv.org/abs/1903.11406), as well as a preliminary to our [ECAI 2020 paper](https://arxiv.org/abs/2006.16365) and [IJCAI 2022 paper](https://arxiv.org/abs/2209.15597). The codes demonstrate several important techniques in KGE and feature some recent state-of-the-art models including TransE, DistMult, CP, SimplE, ComplEx, and our proposed [Quaternion embeddings](https://arxiv.org/abs/1903.11406).
 
 Knowledge graph embedding methods aim to learn low-dimensional vector representations of entities and relations in knowledge graphs. The models take input in the format of triples (h, t, r) denoting head entity, tail entity, and relation, respectively, and output their embedding vectors as well as solving link prediction. For more information, please see our paper.
 
@@ -53,6 +53,7 @@ If you found this code or our work useful, please cite us.
     author = {Tran, Hung-Nghiep and Takasu, Atsuhiro},
     year = {2022},
     pages = {2262--2269},
+    url = {https://arxiv.org/abs/2209.15597},
   }
   ```
 
