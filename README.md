@@ -58,5 +58,5 @@ If you found this code or our work useful, please cite us.
   ```
 
 ## See also
-- MEI-KGE, Multi-partition Embedding Interaction model, which is the complete subsequent work: https://github.com/tranhungnghiep/MEI-KGE
+- The complete development, MEI-KGE (Multi-partition Embedding Interaction model): https://github.com/tranhungnghiep/MEI-KGE
 - KG20C, a scholarly knowledge graph benchmark dataset: https://github.com/tranhungnghiep/KG20C
